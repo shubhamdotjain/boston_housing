@@ -14734,7 +14734,7 @@ orT4cw6VAAAAAElFTkSuQmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>**</p>
 <p>Answer:</p>
-<p>k-fold cross-validation technique is a repeated process. Rather than training the model in one iteration, it is trained again and again by dividing the data set into k folds ie k equally large chunks of the entire dataset. We then iterate through the k chunks one by one and use the current chunk for model validation and the remaining k-1 chunks for training. Hence we end up with k times trained and evaluated models. Validation score is found by taking mean of all the scores.</p>
+<p>k-fold cross-validation technique is a repeated process. Rather than training the model in one iteration, it is trained again and again by dividing the data set into k folds ie k equally divided subsetes.Then it is iterated  one by one and use the current subset for model validation and the remaining k-1 subset for training. Hence we end up with k times trained and evaluated models. Validation score is found by taking mean of all the scores.</p>
 <p>Grid search is computationally complex since we compare each data set with each other and then find optimal one. Moreover grid search may lead to overfitting by testing on the data set many times. With more and more grid points, we are more and more likely to find a point that is good only by chance. With cross validation, the overfitting problem is mitigated since our effective validation set size is larger. This comes at the cost of k-times the computational complexit of a single split.
 **</p>
 
@@ -15046,10 +15046,7 @@ Range in prices: $69,044.61
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>**</p>
 <p>Answer:</p>
-<p>The learning algorithm learned from a very old dataset that may not be relevant because demographics have changed a lot since 1978.</p>
-<p>There are only 3 features currently, there are more features that can be included such as crime rates, nearby to city, public transport access and more.</p>
-<p>The ranges in price is about 70,000 as found while sensitivity analysis. Such a high difference could make it difficult to estimate the price of house</p>
-<p>Data collected from a rural city may not be applicable as the demographics would change and other features may be better able to fit the dataset instead of a model with features that was learned using urban data.</p>
+<p>The situation or demographics have changed a lot since the 1978, thus old dataset may turned out to be irrelevant. The model only consider 3 features, it should also consider the other factores like crime rates, public transport, easy access to daily need goods.The ranges in price is about 70,000 as found while sensitivity analysis. Such a high difference could make it difficult to estimate the price of house. Data collected in urban city would not be applicable to rural city since there are large difference in prices of rural areas and urban areas, not only in properties but in general too</p>
 <p>Due to the above facts the constructed model should not be used in a real-word setting</p>
 <p>**</p>
 
